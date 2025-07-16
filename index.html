@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.00/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/Trix Haven logo.jpg" alt="">
+            <h1>Trix Haven</h1>
+            <p>Since 1990</p>
+        </div>
+
+        <nav class="menu nav-links">
+        <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Menu">Menu</a></li>
+        <li><a href="#reservation">Reservations</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+        <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    </header>
+
+    <!-- BODY1 -->
+     <section id="Home" class="bod">
+        <div class="hero-content">
+            <h2>Exquisite Dining Experience</h2>
+            <p>Fresh ingredients, authentic recipes, unforgettabel flavours</p>
+            <a href="#reservation" class="btn"> Reserve a Table</a>
+        </div>
+     </section>
+    
+     <!-- Menu Section -->
+      <section id="Menu" class="menu-section">
+        <div class="menu-categories">
+            <button class="categorybtn" data-category="starters">Starters</button>
+            <button class="categorybtn" data-category="mains">Courses</button>
+            <button class="categorybtn" data-category="desserts">Desserts</button>
+            <button class="categorybtn" data-category="drinks">Drinks</button>
+        </div>
+
+        <div class="menu-items" id="menu-items">
+            <!-- Menu will be loaded here by JAVA SCRIPT -->
+        </div>
+      </section>
+
+      <!-- About Section -->
+       <section id="About" class="about-section">
+        <div class="about-content">
+            <h2 class="section-title">OUR STORY</h2>
+            <p>Founded in 1990 by Chef Annie Trix, Trix Haven brings authentic worldwide cuisine with a modern twist to your table. Our commitment to quality ingredients and traditional cooking methods has made us a beloved destination for food enthusiasts</p>
+            <p>Every dish tells a story - of family traditions, seasonal produce, and culinary passion</p>
+
+            <a href="#gallery" class="btn">View Our Gallery</a>
+        </div>
+        
+        <div class="about-image">
+            <img src="./images/cheffing.jpg" alt="Chef preparing a Nigerian Cuisine">
+        </div>
+       </section>
+
+       <!-- Gallery section -->
+        <section id="gallery" class="gallery-section">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-grid">
+
+                <!-- 1st Gallery -->
+                <div class="gallery-item">
+                    <img src="./images/Plate of Jollof with veggies and goat meat.jpg" alt="A restaurant dish">
+                    <div class="overlay">Plate of Jollof with Veggies and Goat Meat</div>
+                </div>
+
+                <!-- 2nd gallery -->
+                <div class="gallery-item">
+                    <img src="./images/Ice cream.jpg" alt="A restaurant dish">
+                    <div class="overlay">Ice cream</div>
+                </div>
+
+                <!-- 3rd gallery -->
+                <div class="gallery-item">
+                    <img src="./images/Vegetables soup and eba.jpg" alt="A restaurant dish">
+                    <div class="overlay">Vegetable soup and Eba</div>
+                </div>
+
+                <!-- 4th gallery -->
+                <div class="gallery-item">
+                    <img src="./images/Bread.jpg" alt="A restaurant dish">
+                    <div class="overlay">Freshly baked Bread</div>
+                </div>
+
+                <!-- 5th gallery -->
+                <div class="gallery-item">
+                    <img src="./images/Noodles.jpg" alt="A restaurant dish">
+                    <div class="overlay">Stir Fry Noodles and Fried egg</div>
+                </div>
+
+                <!-- 6th Gallery -->
+                <div class="gallery-item">
+                    <img src="./images/Rice and vegetable sauce.jpg" alt="A restaurant dish">
+                    <div class="overlay">Rice and Vegetable Sauce</div>
+                </div>
+
+                <!-- 7th Gallery -->
+                <div class="gallery-item">
+                    <img src="./images/Doughnut.jpg" alt="A restaurant dish">
+                    <div class="overlay">Doughnut</div>
+                </div>
+                <!-- 6th Gallery -->
+                <div class="gallery-item">
+                    <img src="./images/Popcorn.jpg" alt="A restaurant dish">
+                    <div class="overlay">Popcorn</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reservation Section -->
+         <section id="reservation" class="reservation-section">
+            <h2 class="section-titl">Make A Reservation</h2>
+            <form id="reservation-form" class="reservation-form">
+                <!-- Name -->
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <!-- Phone Number -->
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <!-- Date -->
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <!-- time -->
+                <div class="form-group">
+                    <label for="time">Time</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+
+                <!-- Number of Guests-->
+                <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <select id="guest" name="guests" required>
+                        <option value="">Select...</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5">5 People</option>
+                        <option value="6">6 People</option>
+                        <option value="7">7+ People</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="special-requests">Special-requests</label>
+                    <textarea id="special-requests" name="special-requests"></textarea>
+                </div>
+                <button type="submit" class="btn">Book Table</button>
+            </form>
+         </section>
+
+         <!-- Contact Session -->
+          <section id="Contact" class="contact-section">
+            <div class="contact-info">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Deiman Street, Food valley.</p>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+234 (0)9018016723</p>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <button class="haven"><a href="#Home">trixhaven.com</a></button>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <p>Monday - Friday: 8:00 AM - 9:00 PM <br> Saturday : 9:00 AM - 9:00 PM <br> Sunday : 12:00PM - 8:00PM </p>
+                </div>
+
+                <div class="social-links">
+                    <a href="#"><i class='bx bxs-cookie'></i></a>
+                    <a href="#"><i class='bx bxs-cookie'></i></a>
+                    <a href="#"><i class='bx bxs-cookie'></i></a>
+                </div>
+            </div>
+
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1017762.2919371128!2d7.0518713!3d4.8327553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1751364212968!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </section>
+
+          <!-- FOOTER -->
+           <footer>
+           <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Trix Haven</h3>
+                <p>Fine Dining Experience</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reservations">Reservations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe to our newsletter for special offers</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+           </div>
+
+           <div class="footer-bottom">
+            <p>&copy; 2025 Trix Haven. All Rights Reserved</p>
+           </div>
+           </footer>
+
+     <script src="script.js"></script>
+</body>
+</html>
