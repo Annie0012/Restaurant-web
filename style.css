@@ -552,6 +552,9 @@ footer {
     .footer-newsletter {
         margin-top: 2rem;
     }
+    .footer-links li a{
+        margin: 0 0.5px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -564,8 +567,13 @@ footer {
     .about-image img{
         height: 400px;
     }
-    .about-content p{
+    .about-content{
         text-align: center;
+        margin-right: 20px;
+    }
+    #gallery .btn{
+        align-items: center;
+        justify-content: center;
     }
     .btn{
         align-items: center;
@@ -605,6 +613,9 @@ footer {
     
     .menu-items {
         grid-template-columns: 1fr;
+    }
+    #menu-items{
+        margin: 0 20px;
     }
     .gallery-item img{
         align-items: center;
